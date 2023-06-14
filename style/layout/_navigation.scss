@@ -1,0 +1,43 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .links {
+    gap: 24px;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    margin: 0 24px 0 40px;
+    .drop-down-link {
+      gap: 12px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .arrow-up {
+        display: none;
+        transform: rotate(180deg);
+      }
+      &:hover {
+        color: $purple;
+        .arrow-down {
+          display: none;
+        }
+        .arrow-up {
+          display: block;
+        }
+      }
+    }
+    a:hover {
+      color: $purple;
+    }
+    .header-divider {
+      width: 1px;
+      height: 28px;
+      background-color: rgba(5, 6, 15, 0.08);
+    }
+  }
+  .buttons {
+    display: flex;
+    gap: 12px;
+  }
+}
