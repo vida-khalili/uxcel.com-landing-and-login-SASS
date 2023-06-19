@@ -350,6 +350,33 @@ header .header-wrap .logo img {
   width: 125px;
 }
 
+.navbar {
+  height: 80px;
+  padding: 10px 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+  border-bottom: 1px solid rgba(5, 6, 15, 0.04);
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.navbar .header-wrap {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar .header-wrap .logo img {
+  display: flex;
+  align-items: center;
+  width: 125px;
+}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -394,22 +421,40 @@ header .header-wrap .logo img {
   gap: 12px;
 }
 
-.card {
+@media screen and (max-width: 992px) {
+  .navigation {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-basis: 100%;
+    background-color: #f3f3f3;
+    width: 100%;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .navigation .navbar-nav {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+.section-card {
   flex: 1;
 }
-.card-icon {
+.section-card-icon {
   height: auto;
   max-width: 100%;
   display: inline-block;
   margin-bottom: 24px;
 }
-.card-title {
+.section-card-title {
   font-size: 24px;
   font-weight: 800;
   line-height: 1.4em;
   margin-bottom: 12px;
 }
-.card-description {
+.section-card-description {
   flex: 1;
   opacity: 0.88;
   font-size: 20px;
@@ -888,22 +933,22 @@ main .blue-section .container .contents .text {
     font-size: 48px;
   }
 }
-.card {
+.section-card {
   flex: 1;
 }
-.card-icon {
+.section-card-icon {
   height: auto;
   max-width: 100%;
   display: inline-block;
   margin-bottom: 24px;
 }
-.card-title {
+.section-card-title {
   font-size: 24px;
   font-weight: 800;
   line-height: 1.4em;
   margin-bottom: 12px;
 }
-.card-description {
+.section-card-description {
   flex: 1;
   opacity: 0.88;
   font-size: 20px;
@@ -1022,22 +1067,22 @@ footer .container .footer-bottom ul li a:hover {
   color: white;
 }
 
-.card {
+.section-card {
   flex: 1;
 }
-.card-icon {
+.section-card-icon {
   height: auto;
   max-width: 100%;
   display: inline-block;
   margin-bottom: 24px;
 }
-.card-title {
+.section-card-title {
   font-size: 24px;
   font-weight: 800;
   line-height: 1.4em;
   margin-bottom: 12px;
 }
-.card-description {
+.section-card-description {
   flex: 1;
   opacity: 0.88;
   font-size: 20px;

@@ -18,40 +18,60 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./style/style.css" />
     <title>Uxcel</title>
   </head>
   <body>
-    <header>
+    <header class="navbar navbar-expand-lg">
       <div class="header-wrap">
         <div class="logo"><img src="./image/logo.svg" alt="logo" /></div>
-        <div class="navigation">
-          <div class="links">
-            <div class="drop-down-link">
-              <a href="">Product</a>
-              <img
-                src="./image/arr-down.svg"
-                alt="arrow down"
-                class="arrow-down"
-              />
-              <img src="./image/arr-up.svg" alt="up arrow" class="arrow-up" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navigation collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="navbar-nav">
+            <div class="links">
+              <div class="drop-down-link">
+                <a href="">Product</a>
+                <img
+                  src="./image/arr-down.svg"
+                  alt="arrow down"
+                  class="arrow-down"
+                />
+                <img src="./image/arr-up.svg" alt="up arrow" class="arrow-up" />
+              </div>
+              <div class="drop-down-link">
+                <a href="">Resources</a>
+                <img
+                  src="./image/arr-down.svg"
+                  alt="arrow down"
+                  class="arrow-down"
+                />
+                <img src="./image/arr-up.svg" alt="up arrow" class="arrow-up" />
+              </div>
+              <a href="">Pricing</a>
+              <div class="header-divider"></div>
+              <a href="">For Teams</a>
             </div>
-            <div class="drop-down-link">
-              <a href="">Resources</a>
-              <img
-                src="./image/arr-down.svg"
-                alt="arrow down"
-                class="arrow-down"
-              />
-              <img src="./image/arr-up.svg" alt="up arrow" class="arrow-up" />
+            <div class="buttons">
+              <div class="btn btn-gray">Log In</div>
+              <div class="btn btn-blue">Start for free</div>
             </div>
-            <a href="">Pricing</a>
-            <div class="header-divider"></div>
-            <a href="">For Teams</a>
-          </div>
-          <div class="buttons">
-            <div class="btn btn-gray">Log In</div>
-            <div class="btn btn-blue">Start for free</div>
           </div>
         </div>
       </div>
@@ -305,7 +325,7 @@
           <h2>Why learning UX design with Uxcel gives you a one up</h2>
         </div>
         <div class="cards-bar">
-          <div class="card">
+          <div class="section-card">
             <img class="card-icon" src="./image/i-1.svg" alt="card icon" />
             <p class="card-title">We don’t waste your time</p>
             <p class="card-description">
@@ -313,7 +333,7 @@
               distilled down to deliver only essential pieces knowledge.
             </p>
           </div>
-          <div class="card">
+          <div class="section-card">
             <img class="card-icon" src="./image/i-2.svg" alt="card icon" />
             <p class="card-title">We’re interactive & gamified</p>
             <p class="card-description">
@@ -321,7 +341,7 @@
               lectures. Reinforce your learning with interactive quizzes.
             </p>
           </div>
-          <div class="card">
+          <div class="section-card">
             <img class="card-icon" src="./image/i-3.svg" alt="card icon" />
             <p class="card-title">We’re accessible for all</p>
             <p class="card-description">
@@ -1130,5 +1150,10 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
