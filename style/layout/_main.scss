@@ -211,6 +211,20 @@ main {
     grid-template-columns: 0.75fr 1fr;
     grid-column-gap: 64px;
     grid-row-gap: 40px;
+    .logos {
+      display: flex;
+      max-width: 400px;
+      grid-column-gap: 24px;
+      grid-row-gap: 16px;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      align-items: center;
+      justify-items: center;
+      margin-top: 24px;
+      img {
+        width: 82px;
+      }
+    }
   }
   .navy-section {
     color: white;
@@ -376,6 +390,82 @@ main {
               line-height: 18px;
             }
           }
+        }
+      }
+    }
+    .trustpilot-link {
+      gap: 8px;
+      display: flex;
+      margin-top: 48px;
+      align-items: center;
+      justify-content: center;
+      p.excellent {
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .green-stars {
+        display: flex;
+        align-items: center;
+        svg {
+          width: 120px;
+          height: 24px;
+
+          .tp-star:nth-of-type(-n + 5) .tp-star__canvas,
+          .tp-star:nth-of-type(-n + 5) .tp-star__canvas--half {
+            fill: #00b67a;
+          }
+        }
+      }
+      .reviews-number {
+        font-size: 14px;
+      }
+      .trustpilot-logo {
+        display: flex;
+        gap: 4px;
+        height: 24px;
+        width: 100px;
+        svg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .blue-section {
+    padding: 120px 32px;
+    background-color: $dark-blue;
+    color: white;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      grid-column-gap: 40px;
+      grid-row-gap: 64px;
+      align-items: center;
+      justify-content: space-between;
+      .title {
+        margin: 0;
+        font-size: 32px;
+        max-width: 350px;
+        font-weight: 700;
+        line-height: 130%;
+      }
+      .contents {
+        flex: 1;
+        text-align: center;
+        .number {
+          margin: 0;
+          letter-spacing: -2px;
+          margin-bottom: 8px;
+          font-family: Sora, sans-serif;
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 48px;
+        }
+        .text {
+          margin: 0;
+          font-size: 16px;
+          opacity: 0.88;
         }
       }
     }

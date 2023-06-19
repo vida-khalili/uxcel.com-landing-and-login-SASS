@@ -47,4 +47,28 @@
       color: navy;
     }
   }
+  &-footer {
+    flex: none;
+    color: #000;
+    display: flex;
+    height: 128px;
+    font-size: 32px;
+    font-weight: 700;
+    min-width: 250px;
+    line-height: 40px;
+    margin-right: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 70px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    background-color: #f8db46;
+    font-family: Sora, sans-serif;
+    box-shadow: 0 0 0 20px #000, 0 0 0 24px #7657ff;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    &:hover {
+      box-shadow: 0 0 0 10px #000, 0 0 0 14px #7657ff;
+    }
+  }
 }
