@@ -38,4 +38,13 @@
       color: white;
     }
   }
+
+  &-outline-dark {
+    border: 2px solid #fff;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: navy;
+    }
+  }
 }

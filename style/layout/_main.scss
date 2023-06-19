@@ -1,0 +1,399 @@
+@import "./../sass-utils/variables";
+@import "./../components/card";
+
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section {
+  padding: 160px 0;
+  .content {
+    .pen {
+      margin: 0 0 16px 0;
+    }
+    h2 {
+      margin: 0 0 16px 0;
+    }
+    .text {
+      margin-bottom: 16px;
+    }
+  }
+  .image {
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    img {
+      max-width: 540px;
+    }
+  }
+}
+
+main {
+  max-width: 100%;
+  padding: 120px 0 64px 0;
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 32px;
+
+    &-text {
+      margin-bottom: 24px;
+      h1 {
+        letter-spacing: -2px;
+        font-size: 64px;
+        line-height: 1.125;
+        margin-bottom: 24px;
+        .yellow-underline {
+          background-image: url("./../../image/yellow-underline.svg");
+          background-position: 50% 100%;
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin-bottom: -26px;
+          padding: 0 46px 26px 14px;
+          display: inline-block;
+          margin-left: -10px;
+        }
+      }
+      .text {
+        margin-bottom: 24px;
+      }
+      .buttons {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 16px;
+        font-size: 20px;
+      }
+    }
+    &-image {
+      display: flex;
+      justify-content: center;
+
+      img {
+        max-width: 500px;
+        max-height: 495px;
+      }
+    }
+  }
+  .logo-rating-bar {
+    margin-top: 80px;
+    padding-bottom: 120px;
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    grid-row-gap: 40px;
+    align-items: center;
+    grid-column-gap: 40px;
+    justify-content: center;
+    &-divider {
+      width: 2px;
+      background-color: rgba(5, 6, 15, 0.06);
+      align-self: stretch;
+    }
+    .logos {
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      justify-content: center;
+      gap: 24px;
+      img {
+        height: 63px;
+      }
+    }
+    .reviews {
+      max-width: 220px;
+      display: grid;
+      p {
+        opacity: 0.7;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    .trust-pilot {
+      max-width: 220px;
+      display: grid;
+      gap: 8px;
+      .logo {
+        svg {
+          width: 120px;
+          height: 30px;
+        }
+      }
+      .green-stars {
+        svg {
+          width: 206px;
+          height: 37px;
+
+          .tp-star:nth-of-type(-n + 5) .tp-star__canvas,
+          .tp-star:nth-of-type(-n + 5) .tp-star__canvas--half {
+            fill: #00b67a;
+          }
+        }
+      }
+      .summery {
+        display: grid;
+        gap: 4px;
+        p {
+          font-size: 14px;
+          line-height: 1.2;
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .gray-section {
+    background-color: $light-gray;
+    .grid-section {
+      grid-template-columns: 1fr 0.75fr;
+      grid-column-gap: 64px;
+      grid-row-gap: 40px;
+      .game-box {
+        border: 4px solid $black;
+        border-radius: 24px;
+        background-color: $gray;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 16px 32px;
+        .browser {
+          position: absolute;
+          top: -1px;
+          left: 0;
+        }
+        .title {
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 32px;
+          margin-bottom: 24px;
+        }
+        .diagrams-bar {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+          .diagram {
+            background-color: white;
+            border: 2px solid transparent;
+            max-width: 250px;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            height: auto;
+            cursor: pointer;
+            img {
+              border-radius: 24px;
+              max-width: 250px;
+              overflow: hidden;
+            }
+            &:hover {
+              border-color: $black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .white-section {
+    grid-template-columns: 0.75fr 1fr;
+    grid-column-gap: 64px;
+    grid-row-gap: 40px;
+  }
+  .navy-section {
+    color: white;
+    background-color: $navy-blue;
+    .grid-section {
+      grid-template-columns: 1fr 0.75fr;
+    }
+  }
+  .yellow-section {
+    background-color: $yellow;
+    .grid-section {
+      grid-template-columns: 0.75fr 1fr;
+    }
+  }
+
+  .edtech {
+    position: relative;
+
+    img {
+      height: auto;
+      width: 180px;
+      display: inline-block;
+      opacity: 1;
+      position: absolute;
+      top: -90px;
+      bottom: auto;
+      left: auto;
+      right: 5%;
+    }
+  }
+  .why-section {
+    padding: 120px 0;
+    .title {
+      margin: 0 auto;
+      max-width: 720px;
+      h2 {
+        margin-top: 0;
+        margin-bottom: 60px;
+        text-align: center;
+      }
+    }
+    .cards-bar {
+      display: flex;
+      grid-column-gap: 80px;
+      grid-row-gap: 80px;
+      text-align: center;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+    .btn {
+      margin: 0 auto;
+      font-size: 20px;
+    }
+  }
+  .black-section {
+    padding: 120px 32px;
+    color: white;
+    background-color: $black;
+    .grid-section {
+      grid-template-columns: 1.5fr 0.5fr;
+      margin: 0 auto 80px auto;
+
+      .content {
+        .pen {
+          margin: 0 0 16px 0;
+        }
+        h2 {
+          margin: 0 0 40px 0;
+        }
+        .text {
+          margin-bottom: 16px;
+        }
+        .author {
+          &-name {
+            margin-bottom: 4px;
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 32px;
+          }
+          &-position {
+            font-size: 20px;
+            line-height: 32px;
+          }
+        }
+      }
+      .image {
+        .feedback-photo {
+          width: 400px;
+          object-fit: cover;
+          background-color: rgba(5, 6, 15, 0.02);
+          border-radius: 144px;
+        }
+      }
+    }
+    .companies {
+      margin-bottom: 40px;
+      .title {
+        opacity: 0.8;
+        font-size: 20px;
+        text-align: center;
+      }
+      .logo-bar {
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .reviews {
+      column-count: 3;
+      column-gap: 24px;
+      margin-bottom: -24px;
+      .review {
+        &-text {
+          color: #000;
+          font-size: 14px;
+          line-height: 22px;
+          margin-bottom: 16px;
+        }
+
+        &-stars {
+          display: flex;
+          gap: 4px;
+          margin-bottom: 16px;
+          img {
+            width: 19px;
+            height: 19px;
+          }
+        }
+        &-author {
+          display: flex;
+          justify-content: flex-start;
+          &-photo {
+            margin-right: 16px;
+            position: relative;
+          }
+
+          &-position {
+            width: 100%;
+            .name-logo {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .name {
+                font-weight: 700;
+                line-height: 28px;
+              }
+              .logo {
+                display: flex;
+                align-items: center;
+                img {
+                  width: 28px;
+                }
+              }
+            }
+            .job {
+              color: rgba(5, 6, 15, 0.6);
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 16px;
+    .hero {
+      grid-template-columns: unset;
+      gap: 24px;
+
+      &-text {
+        h1 {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}
