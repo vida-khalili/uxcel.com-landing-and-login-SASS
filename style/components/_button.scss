@@ -72,3 +72,45 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .btn {
+    padding: 8px;
+    font-size: 14px;
+    &-large {
+      padding: 16px 12px;
+      font-size: 14px;
+    }
+    &-footer {
+      margin: 0 auto;
+      height: 75px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 70px;
+      box-shadow: 0 0 0 12px #000, 0 0 0 16px #7657ff;
+      &:hover {
+        box-shadow: 0 0 0 8px #000, 0 0 0 12px #7657ff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btn {
+    &-footer {
+      height: 60px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      padding-left: 16px;
+      padding-right: 16px;
+      box-shadow: 0 0 0 12px #000, 0 0 0 16px #7657ff;
+      &:hover {
+        box-shadow: 0 0 0 8px #000, 0 0 0 12px #7657ff;
+      }
+    }
+  }
+}
