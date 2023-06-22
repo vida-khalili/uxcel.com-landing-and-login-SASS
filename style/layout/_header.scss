@@ -29,3 +29,15 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  header {
+    .header-wrap {
+      .logo {
+        img {
+          width: 80px;
+        }
+      }
+    }
+  }
+}

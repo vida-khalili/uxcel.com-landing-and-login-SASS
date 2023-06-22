@@ -212,11 +212,12 @@ main {
     grid-row-gap: 40px;
     .logos {
       display: flex;
+      flex-wrap: wrap;
       max-width: 400px;
       grid-column-gap: 24px;
       grid-row-gap: 16px;
       grid-template-rows: auto;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      // grid-template-columns: 1fr 1fr 1fr 1fr;
       align-items: center;
       justify-items: center;
       margin-top: 24px;
@@ -650,8 +651,8 @@ main {
         align-items: center;
         column-gap: 16px;
         column-count: unset;
-        grid-template-columns: repeat(14, 300px);
-        overflow-x: scroll;
+        // grid-template-columns: repeat(14, 300px);
+        // overflow-x: scroll;
       }
     }
     .blue-section {

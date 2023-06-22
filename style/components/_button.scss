@@ -71,6 +71,24 @@
       box-shadow: 0 0 0 10px #000, 0 0 0 14px #7657ff;
     }
   }
+
+  &-icon-text {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0 16px;
+    line-height: 28px;
+    font-weight: 700;
+    height: 44px;
+    border-radius: 10px;
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
 }
 
 @media screen and (max-width: 900px) {

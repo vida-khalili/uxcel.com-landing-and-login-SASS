@@ -1,0 +1,16 @@
+body.login {
+  background-color: #f3f3f3;
+  height: 100%;
+  padding: 64px 0;
+  .logo {
+    margin: 0 auto 32px auto;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body.login {
+    padding: 40px 0;
+  }
+}
