@@ -4,6 +4,7 @@
   display: flex;
   cursor: pointer;
   font-weight: 700;
+  position: relative;
   padding: 10px 16px;
   width: fit-content;
   align-items: center;
@@ -89,6 +90,26 @@
       height: 24px;
     }
   }
+}
+
+.badge {
+  letter-spacing: 0.5px;
+  border-radius: 20px;
+  padding: 5px 7px;
+  font-size: 11px;
+  position: absolute;
+  top: -16px;
+  bottom: auto;
+  left: -15px;
+  right: auto;
+  transform: rotate(-12deg);
+  background-color: $yellow;
+  color: #05060f;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  line-height: 14px;
+  display: flex;
 }
 
 @media screen and (max-width: 900px) {
