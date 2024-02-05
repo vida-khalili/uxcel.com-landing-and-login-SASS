@@ -109,6 +109,18 @@ footer {
         }
       }
     }
+
+    .developer {
+      margin-top: 8px;
+      text-align: center;
+      width: 100%;
+      font-size: 14px;
+      opacity: 0.8;
+      a {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
   }
 }
 
